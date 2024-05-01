@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* You would add the background image or color here, similar to the homepage. */
+    background-image: url('milfinal.jpg'); /* Update with the correct path to the image used on the homepage */
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.faq-container {
+    width: 80%;
+    margin: 2em auto;
+    background-color: #f9f9f997; /* This should match the background of your FAQ section. */
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h2 {
+    color: #333;
+}
+
+.faq-item p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+}
+
+footer {
+  background: #233f4aeb;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}/* Existing styles from the previous content */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background:#233f4aeb; /* Assuming a white background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Added shadow for some depth */
+  }
+  
+  /* header .logo {
+    font-size: 24px;
+    color: #333;
+  } */
+  
+  
+  .logo {
+    background-image: url('logo.jpg');
+    width: 400px;  /* Adjust as per your logo's size */
+    height: 100px; /* Adjust as per your logo's size */
+    background-size: contain; /* Ensures the logo fits well within the dimensions */
+    background-repeat: no-repeat;
+    margin-left: 0px;
+  }
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-left: 20px;
+    
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #f9f8f8;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #007BFF; /* Change the color on hover */
+  }
+  

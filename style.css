@@ -1,0 +1,434 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(to right, #2f556d, #d9cfd2);
+
+  
+}
+.logo {
+  background-image: url('logo.jpg');
+  width: 400px;  /* Adjust as per your logo's size */
+  height: 100px; /* Adjust as per your logo's size */
+  background-size: contain; /* Ensures the logo fits well within the dimensions */
+  background-repeat: no-repeat;
+  margin-left: 0px;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1; /* Place the video under other content */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background:#233f4aeb; /* Assuming a white background */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Added shadow for some depth */
+}
+
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 20px;
+  
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #f9f8f8;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #007BFF; /* Change the color on hover */
+}
+
+
+
+/* .carousel-container {
+  position: relative;
+  margin-top: 0.3px; 
+  margin-bottom: 0.3px; 
+  height: calc(10vh - 150px); 
+} */
+
+
+
+.carousel-container {
+  position: relative;
+  margin-top: 0.3px;  /* Adjust this value to match the actual height of your header */
+  margin-bottom: 0.3px;  /* Adjust this value to match the actual height of your footer */
+  height: calc(120vh - 150px);  
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* For image slides */
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+.carousel-slide.active {
+  opacity: 1;  /* Make the active slide visible */
+}
+
+.quote {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: white;
+  padding: 20px;
+  width: 300px;  /* Adjust width as needed */
+  height: 100px;  /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-size: 16px;
+}
+
+.carousel-slide video {
+  width: 100%;
+  height: 101%;
+  object-fit: cover; /* For video to cover the slide area */
+}
+/* Overlay with lighter background for dark text visibility */
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(146, 119, 119, 0.3); /* Lighter overlay */
+  z-index: 0;
+}
+
+/* Text content container */
+.hero .content {
+  position: relative;
+  z-index: 1;
+}
+
+
+.hero h1, .hero h2,.hero h4, .hero p {
+  color: #1e0a06; /* Dark gray color */
+  text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.7); /* White text shadow for legibility */
+}
+
+.hero h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin: 20px 0;
+}
+.hero h4 {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+
+.hero p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #233f4aeb;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+.studentfooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #233f4aeb;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* Enhanced form styling */
+form {
+  background-color: hsla(52, 100%, 97%, 0.758); /* Light grey background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(173, 26, 26, 0.484); /* Subtle shadow for depth */
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.form-section {
+  margin-bottom: 25px;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 10px;
+  color: #10150c; /* Dark grey color for the text */
+  font-size: 18px; /* Larger font for better readability */
+}
+
+input[type="text"],
+input[type="email"],
+.response-options label {
+  width: calc(80% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #007BFF; /* Border color to match the CTA buttons */
+  border-radius: 4px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inset shadow for depth */
+  font-size: 16px; /* Readable text size */
+  color: #333; /* Dark text for contrast */
+}
+
+.response-options label {
+  display: inline-block;
+  margin-right: 10px;
+  background: #c8c1c8; /* Light background for the radio buttons */
+  border-radius: 4px; /* Circular radio buttons */
+  padding: 5px; /* Spacing around radio buttons */
+  box-shadow: none; /* No shadow for radio button labels */
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase; /* Uppercase text for CTA button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for dimension */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.results-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  /* background: url('background2.jpg') no-repeat center center/cover; */
+
+
+
+
+}
+
+/* Keep the questions page content as it was */
+.questions-main {
+  padding: 20px; /* Adjust based on your design */
+}
+
+/* Adjustments for the recommendations section on the results page */
+.results-main .recommendations {
+  width: 300%;
+  max-width: 900px; /* Adjust based on your design */
+  margin: auto;
+  background-color: rgb(226, 208, 208);
+  
+ 
+ 
+}
+
+.results-main section {
+  margin: 20px 0;
+  
+  
+ 
+}
+.assessment
+{
+font-size: 50px;
+color: hsla(300, 24%, 96%, 0.995);
+
+}
+.resulttext
+{
+font-size: 25px;
+}
+.assessbelow{
+  color: #fbf7fb;
+  font-size: 30px;
+}
+.responsive-iframe {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.result-item {
+  color:#27ae60;
+  font-size: 1.5em; 
+  padding: 10px; /* Adds some padding inside the list items */
+  margin-bottom: 10px; /* Adds some space between the items */
+  border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+.depression {
+  background-color: #f2d7d5; /* Light red background for depression */
+  color: #c0392b; /* Darker red text color */
+}
+
+.anxiety {
+  background-color: #d6eaf8; /* Light blue background for anxiety */
+  color: #2980b9; /* Darker blue text color */
+}
+
+.stress {
+  background-color: #d4efdf; /* Light green background for stress */
+  color: #27ae60; /* Darker green text color */
+}
+.article
+{
+  background-color: #ae9527;
+}
+.assessment-icons {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.assessment-icon {
+  margin: 0 15px;
+  text-align: center;
+}
+
+.assessment-icon img {
+  width: 200px; /* You can adjust the size */
+  height: 200px;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .assessment-icons {
+      flex-direction: column;
+  }
+
+  .assessment-icon {
+      margin: 10px 0;
+  }}
+  
+  
+
+@media screen and (max-width: 768px) {
+  #authContainer {
+      width: 80%;
+  }}
+  .resetemail .alert {
+    padding: 10px;
+    background-color: #ccd8cf; /* Background color for the alert */
+    border: 1px solid #c3e6cb; /* Border color for the alert */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Reduce margin bottom for spacing */
+    color: #155724; /* Text color for the alert */
+    margin-top: 10px; /* Reduce margin top for spacing */
+    align-items: center;
+    max-width: calc(100% - 500px); /* Adjust max-width to match the width of the form or gifs */
+    padding-left: 500px; /* Set left padding */
+  }
+  .resetemail .form-container {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 5s ease; /* Add transition for smooth animation */
+      margin-bottom: 10px; /* Reduce margin bottom for spacing */
+  }
+  
+  .resetemail.active .form-container {
+      max-height: 500px;
+      max-width: 500px; 
+      padding-left: 500px; /* Adjust the max-height based on your form's height */
+  }
+  
+  .resetemail .gif-container {
+      max-width: 400px;
+      width: 80%;
+      margin-bottom: 10px;
+      padding-left: 500px; /* Adjust padding-left based on the width of the form */
+  }
+  
+  .resetemail .reset-gif {
+      width: 100%;
+      height: 200px;
+  }
+  
+  .forget {
+      background-color: #6786adf6;
+  }
+  
+.card-body p-4
+{
+  background: #007BFF;
+}
+/* Apply styles for centered content */
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content:relative;
+  align-items: center;
+  height: 100vh; /* Set height to fill the viewport */
+}
+
+/* Apply styles for card */
+.centered-content .card {
+  width: 100%; /* Set card width to fill the container */
+}

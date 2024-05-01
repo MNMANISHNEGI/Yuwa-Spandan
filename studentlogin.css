@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to right, #2f556d, #d9cfd2);
+  
+    
+  }
+  .logo {
+    background-image: url('logo.jpg');
+    width: 400px;  /* Adjust as per your logo's size */
+    height: 100px; /* Adjust as per your logo's size */
+    background-size: contain; /* Ensures the logo fits well within the dimensions */
+    background-repeat: no-repeat;
+    margin-left: 0px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #233f4aeb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  header nav ul {
+    list-style-type: none;
+    display: flex; /* Align items horizontally */
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    padding: 0 20px; /* Add horizontal padding */
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #f9f8f8;
+    font-weight: bold;
+    font-size: 18px; /* Adjust font size for better readability */
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #007BFF;
+  }
+  
+  /* Login and Signup Forms */
+  #authContainer {
+    max-width: 400px;
+    margin: 40px auto; /* Increase margin for better centering */
+    padding: 25px; /* Increase padding for better spacing */
+    background: #fbfaf6a3;
+    border-radius: 20px; /* Rounder corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soften shadow */
+  }
+  
+  #loginSection h2, #signupSection h2 {
+    text-align: center;
+    color: #233f4a;
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 12px; /* Increase padding for better clickability */
+    margin: 10px 0;
+    border: 2px solid #ccc; /* Increase border thickness */
+    border-radius: 10px; /* More rounded borders */
+    font-size: 16px; /* Larger font size for better readability */
+  }
+  
+  button {
+    padding: 12px; /* Increase padding for better clickability */
+    margin-top: 20px; /* Increase margin above the button */
+    background-color: #296076eb;
+    color: white;
+    border: none;
+    border-radius: 10px; /* More rounded borders */
+    cursor: pointer;
+    font-size: 16px; /* Increase font size for visibility */
+    transition: background-color 0.3s, transform 0.2s; /* Add transform to transition */
+  }
+  
+  button:hover {
+    background-color: #3A5FCD;
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+ 
+  
+  a:hover {
+    text-decoration: underline;
+    color: #3A5FCD; /* Darken the color on hover */
+  }
+  
+  footer {
+    background: #233f4aeb;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .signup-gif, .login-gif {
+    width: 100%; /* Full-width to align with the form */
+    max-height: 200px; /* Limit the height and ensure it's responsive */
+    object-fit: cover; /* Ensure the GIF covers the allotted space without distortion */
+  }
+ 
